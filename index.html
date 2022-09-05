@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+        <link rel="icon" href="./icon.png">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+        <title> Etch a Sketch </title>
+    </head>
+    <body>
+        <h1>Pixel-Sketch</h1>
+        <div class="flexCont">
+            <div class="buttons">
+                <input type="color" onchange="customColor=this.value" value="#ff0000">
+                <button class="color">COLOR</button>
+                <button class="black activate" type="button" >BLACK</button>
+                <button class="random" type="button" >RANDOM</button>
+                <button class="eraser" type="button" >ERASER</button>
+                <button class="reset" type="reset" onclick="resetGrid()" >RESET</button>
+                <div class="size">
+                    <input type="range" value="16" min="1" max="64" onmousemove="updateSize(this.value)"><span>16 x 16</span>
+                </div>
+            </div>
+            <div class="container"></div>
+        </div>
+        <footer style="text-align: center;">
+            <p>Copyright &copy; 
+                <a href="https://github.com/dhina1801/PixelSketch.git" target="_blank">
+                <script>document.write(new Date().getFullYear())</script>
+                Dinaharan</a>
+            </p>
+            </a>
+        </footer>
+    </body>
+</html>

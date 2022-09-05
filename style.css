@@ -1,0 +1,156 @@
+@import url('http://fonts.cdnfonts.com/css/minecraft-4');
+* {
+    font-family: 'Minecraft', sans-serif;
+    color: azure;
+}                
+body {
+    padding: 0;
+    margin: 0;
+    background: hsla(354, 95%, 24%, 1);
+    background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#76030F", endColorstr="#121B67", GradientType=1 );
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+    font-size: 64px;
+    background-image: linear-gradient(-45deg, #601d18,#4a02cc,#f7fb4b,#f7122d,#ff9738,#ee4499,#9c3af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 35s linear infinite;
+}
+@keyframes move {
+    to {
+        background-position: 4500vh;
+    }
+}
+.container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    border: 30px ridge rgb(57, 84, 238);
+    border-radius: 10px;
+}
+.flexCont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.buttons button {
+    font-size: 24px;
+    max-width: fit-content;
+    padding: 5px 20px ;
+    border-radius: 10px;
+    background-color: rgba(19, 2, 2, 0.925);
+    border-color: azure;
+    cursor: pointer;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background: #111;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0,0,0,1);
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: #073808;
+    cursor: pointer;
+    border: 2px solid #333;
+    box-shadow: -407px 0 0 400px #00fd0a;
+}
+input[type=color] {
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+input[type=color]::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px outset azure;
+}
+.activate, .reset:active {
+    color: rgb(241, 11, 11);
+}
+a {
+    text-decoration: none;
+}
+@media (max-width: 750px) {
+    h1 {
+        font-size: 56px;
+    }
+    .flexCont {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container {
+        height: 400px;
+        width: 400px;
+        border: 30px ridge rgb(57, 84, 238);
+    }
+    .buttons button {
+        font-size: 24px;
+        max-width: fit-content;
+        padding: 4px 15px ;
+        border-radius: 10px;
+    }
+    footer {
+        font-size: 24px;
+    }
+    .buttons input[type=color] {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+}
+@media (max-width: 650px) {
+    h1 {
+        font-size: 36px;
+    }
+    .flexCont {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container {
+        height: 250px;
+        width: 250px;
+        border: 15px ridge rgb(57, 84, 238);
+    }
+    .buttons button {
+        font-size: 12px;
+        max-width: fit-content;
+        padding: 2px 10px ;
+        border-radius: 5px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .buttons input[type=color] {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+}
