@@ -60,7 +60,7 @@ function resetGrid() {
 function colorGrid(e) {
     if (e.type === 'mouseover' && !mouseDown) return
         if (color === 'random') {
-            this.style.backgroundColor = `rgb(${Math.random()*266}, ${Math.random()*266}, ${Math.random()*266})`;
+            this.style.backgroundColor = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
         } else this.style.backgroundColor = color
 }
 
